@@ -3,12 +3,12 @@ import { Button, Components, DiscordHono, _channels_$_messages } from 'discord-h
 const app = new DiscordHono()
   .cron('43 * * * *', async c => {
 	await c.rest('POST', _channels_$_messages, ['1386038293891911700'], {
-		content: '@everyone 43だよ.'
+		content: '43だよ.'
 	})
   })
   .cron('3 4 * * *', async c => {
 	await c.rest('POST', _channels_$_messages, ['1386038293891911700'], {
-		content: '@everyone 43だよ.'
+		content: '43だよ.'
 	})
   })
   .command('43', c => c.res('43だよ.'))
