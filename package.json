@@ -1,0 +1,26 @@
+{
+	"name": "43bot",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"register": "tsc && node --env-file=.env dist/register.js"
+	},
+	"devDependencies": {
+		"@cloudflare/vitest-pool-workers": "^0.8.19",
+		"@cloudflare/workers-types": "^4.20250620.0",
+		"@types/node": "^24.0.3",
+		"discord-api-types": "^0.38.12",
+		"typescript": "^5.5.2",
+		"vitest": "~3.2.0",
+		"wrangler": "^4.20.5"
+	},
+	"dependencies": {
+		"discord-hono": "^0.19.3"
+	}
+}
