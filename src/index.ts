@@ -6,7 +6,7 @@ const app = new DiscordHono()
 		content: '43だよ.'
 	})
   })
-  .cron('3 4 * * *', async c => {
+  .cron('3 19 * * *', async c => {
 	await c.rest('POST', _channels_$_messages, ['1386038293891911700'], {
 		content: '43だよ.'
 	})
